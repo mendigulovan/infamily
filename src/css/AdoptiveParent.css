@@ -12,3 +12,15 @@
 h3 {
   margin-bottom: 1em;
 }
+
+.slider-list {
+    height: auto!important;
+}
+
+.slider-slide {
+    position: sticky!important;
+}
+
+.img {
+  background-size: cover;
+}

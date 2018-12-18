@@ -2,10 +2,22 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import '../css/AdoptiveParent.css';
 import { Jumbotron, Grid, Row, Col, Image } from 'react-bootstrap';
+import Carousel from 'nuka-carousel';
 
 export default class Home extends Component {
-  render() {
-    return (
+    render() {
+        return (
+          <div>
+          <div className="slider-list">
+            <div className="slider-slide">
+              <span>InFamily</span>
+                  <Carousel>
+                    <img height={300} alt="300x300" src="assets/1.jpg" />
+                    <img height={300} alt="300x300" src="assets/2.jpg" />
+                    <img height={300} alt="300x300" src="assets/3.jpg" />
+                  </Carousel>
+            </div>
+          </div>
       <Grid>
         <Jumbotron>
           <h2>Хотите стать приёмным родителем?</h2>
@@ -31,6 +43,7 @@ export default class Home extends Component {
           </Row>
         </Jumbotron>
       </Grid>
+      </div>
     )
   }
 }
