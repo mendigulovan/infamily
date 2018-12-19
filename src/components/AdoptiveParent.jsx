@@ -8,15 +8,7 @@ export default class Home extends Component {
     render() {
         return (
           <div>
-          <div className="slider-list">
-            <div className="slider-slide">
-              <span>InFamily</span>
-                  <Carousel>
-                    <img height={300} alt="300x300" src="assets/1.jpg" />
-                    <img height={300} alt="300x300" src="assets/2.jpg" />
-                    <img height={300} alt="300x300" src="assets/3.jpg" />
-                  </Carousel>
-            </div>
+          <div class="page-header">
           </div>
       <Grid>
         <Jumbotron>

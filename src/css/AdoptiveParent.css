@@ -13,14 +13,8 @@ h3 {
   margin-bottom: 1em;
 }
 
-.slider-list {
-    height: auto!important;
-}
-
-.slider-slide {
-    position: sticky!important;
-}
-
-.img {
+.page-header {
+  height: 30px;
+  margin-top: 0px;
   background-size: cover;
 }
