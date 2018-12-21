@@ -7,13 +7,15 @@ import Carousel from 'nuka-carousel';
 export default class Home extends Component {
     render() {
         return (
-          <div>
+          <div className="content">
+          <span>InFamily</span>
+          <p>Краткое описание сайта</p>
           <div className="slider-list">
             <div className="slider-slide">
                   <Carousel>
-                    <img height={550} alt="500x500" src="assets/1.jpg" />
-                    <img height={550} alt="500x500" src="assets/2.jpeg" />
-                    <img height={550} alt="500x500" src="assets/3.jpg" />
+                    <img width={900} height={600} alt="900x600" src="assets/1.jpg"/>
+                    <img width={900} height={600} alt="900x600" src="assets/2.jpeg" />
+                    <img width={900} height={600} alt="900x600" src="assets/3.jpg" />
                   </Carousel>
             </div>
           </div>
@@ -24,26 +26,26 @@ export default class Home extends Component {
           <h3>Краткое описание</h3>
           <h2>Основное меню</h2>
           <Row className="show-grid text-center">
-            <Col xs={2} sm={3} className="cat-wrapper">
-              <Image src="assets/image-1.jpg" circle className="picture"/>
+            <Col xs={12} sm={3} className="cat-wrapper">
+              <Image src="assets/circle1.jpg" className="picture"/>
               <Link to="/adopt">
               <h4>Хотите стать приёмными родителями?</h4>
               </Link>
             </Col>
             <Col xs={12} sm={3} className="cat-wrapper">
-              <Image src="assets/image-3.jpg" circle className="picture"/>
+              <Image src="assets/circle2.jpg" className="picture"/>
               <Link to="/docs">
               <h4>Вы являетесь приёмным родителем?</h4>
               </Link>
             </Col>
             <Col xs={12} sm={3} className="cat-wrapper">
-              <Image src="assets/image-2.jpg" circle className="picture"/>
+              <Image src="assets/circle3.jpg" className="picture"/>
               <Link to="/test">
               <h4>О приёмных детях</h4>
               </Link>
             </Col>
             <Col xs={12} sm={3} className="cat-wrapper">
-              <Image src="assets/image-2.jpg" circle className="picture"/>
+              <Image src="assets/circle4.jpg" className="picture"/>
               <Link to="/test">
               <h4>Список специалистов</h4>
               </Link>

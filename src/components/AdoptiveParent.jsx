@@ -9,30 +9,14 @@ export default class Home extends Component {
         return (
           <div>
           <div class="page-header">
+          <img width={1350} height={600} alt="900x600" src="assets/1.jpg"/>
           </div>
+          <Col xs={12} sm={4} className="cat-wrapper">
+            <Image src="assets/circle1.jpg" circle className="main-picture"/>
+          </Col>
       <Grid>
-        <Jumbotron>
+        <Jumbotron className="second-page">
           <h2>Хотите стать приёмным родителем?</h2>
-          <Row className="show-grid text-center">
-            <Col xs={12} sm={4} className="cat-wrapper">
-              <Image src="assets/image-1.jpg" circle className="picture"/>
-              <Link to="/info">
-              <h3>Информация об усыновлении</h3>
-              </Link>
-            </Col>
-            <Col xs={12} sm={4} className="cat-wrapper">
-              <Image src="assets/image-3.jpg" circle className="picture"/>
-              <Link to="/docs">
-              <h3>Процесс сбора документов</h3>
-              </Link>
-            </Col>
-            <Col xs={12} sm={4} className="cat-wrapper">
-              <Image src="assets/image-2.jpg" circle className="picture"/>
-              <Link to="/test">
-              <h3>Тест: "Готовы ли вы стать родителем?"</h3>
-              </Link>
-            </Col>
-          </Row>
         </Jumbotron>
       </Grid>
       </div>
