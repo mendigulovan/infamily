@@ -27,25 +27,25 @@ export default class Home extends Component {
           <h2>Основное меню</h2>
           <Row className="show-grid text-center">
             <Col xs={12} sm={3} className="cat-wrapper">
-              <Image src="assets/circle1.jpg" className="picture"/>
+              <Image src="assets/circle1.jpg" circle className="picture"/>
               <Link to="/adopt">
               <h4>Хотите стать приёмными родителями?</h4>
               </Link>
             </Col>
             <Col xs={12} sm={3} className="cat-wrapper">
-              <Image src="assets/circle2.jpg" className="picture"/>
-              <Link to="/docs">
+              <Image src="assets/circle2.jpg" circle className="picture"/>
+              <Link to="/AboutParents">
               <h4>Вы являетесь приёмным родителем?</h4>
               </Link>
             </Col>
             <Col xs={12} sm={3} className="cat-wrapper">
-              <Image src="assets/circle3.jpg" className="picture"/>
+              <Image src="assets/circle3.jpg" circle  className="picture"/>
               <Link to="/test">
               <h4>О приёмных детях</h4>
               </Link>
             </Col>
             <Col xs={12} sm={3} className="cat-wrapper">
-              <Image src="assets/circle4.jpg" className="picture"/>
+              <Image src="assets/circle4.jpg" circle  className="picture"/>
               <Link to="/test">
               <h4>Список специалистов</h4>
               </Link>
