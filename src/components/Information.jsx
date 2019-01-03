@@ -1,37 +1,55 @@
 import React from 'react';
-import axios from 'axios';
-import Carousel from 'nuka-carousel';
 import '../css/Information.css';
-import { Jumbotron, Grid, Row, Col, Image } from 'react-bootstrap';
+import { Grid, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import Gallery from 'react-photo-gallery';
 
-export default class PersonList extends React.Component {
+export default class Home extends React.Component {
   state = {
     content: []
   }
 
-  componentDidMount() {
-    axios.get(`https://cors-anywhere.herokuapp.com/http://46.101.236.211:5678/api/categories/4/`)
-      .then(res => {
-        const content = res.data;
-        this.setState({ content });
-      })
-  }
-
   render() {
     return (
-      <div className="slider-list">
-        <div className="slider-slide">
-              <Carousel>
-                <img height={500} alt="300x500" src="assets/1.jpg" />
-                <img height={500} alt="300x500" src="assets/2.jpg" />
-                <img height={500} alt="300x500" src="assets/3.jpg" />
-              </Carousel>
-        </div>
-      </div>
-    /*  <ul>
-        { this.state.content.map(content => <li>{content.title}</li>)}
-      </ul>*/
-
+      <Grid>
+        <Gallery direction={"column"} photos={PHOTO_SET} />
+          <Row className="show-grid text-center">
+            <Col xs={12} sm={3} className="cat-wrapper">
+              <Link to="/fost">
+              <h4>Фостерное опекунство</h4>
+              </Link>
+              <Link to="/opekunstvo">
+              <h4>Опекунство и попечительство</h4>
+              </Link>
+              <Link to="/usynovlenie">
+              <h4>Усыновление</h4>
+              </Link>
+            </Col>
+          </Row>
+      </Grid>
     )
   }
 }
+
+const PHOTO_SET = [
+  {
+    src: "assets/fost.jpg",
+    width: 4,
+    height: 3
+  },
+  {
+    src: "assets/usynovlenie.jpg",
+    width: 1,
+    height: 1
+  },
+  {
+    src: "assets/opekunstvo.jpg",
+    width: 3,
+    height: 4
+  },
+  {
+    src: "assets/4pic.jpg",
+    width: 3,
+    height: 4
+  }
+];

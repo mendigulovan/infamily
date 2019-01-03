@@ -1,7 +1,4 @@
-.second-page {
-  margin-bottom: 4em;
-  background-image: url('../img/back2.jpg');
-}
+
 .cat-wrapper {
   margin-bottom: 2em;
 }
@@ -15,8 +12,8 @@
   z-index: 3;
   width: 160px;
   height: 160px;
-  margin-left: 411px;
-  margin-top: -120px;
+  margin-left: 490px;
+  margin-top: -130px;
 
 
 }
@@ -34,11 +31,28 @@ h2 {
   font-size: 30px;
 }
 
-.page-header {
-   background-repeat: no-repeat;
-   margin-top: -10px;
-   position: relative;
-   z-index: 2;
-   height: 500px;
+.head {
+  height: 30vh;
+  min-height: 500px;
+  background-image: url('../img/1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
+.bt {
+  background-color: #d9d9d9;
+}
+
+.btn-link: focus{
+    background-color: yellow !important;
+    text-decoration: underline;
+}
+
+.aws-btn {
+  --button-primary-color: #1e88e5;
+  --button-primary-color-dark: #1360a4;
+  --button-primary-color-light: #ffffff;
+  --button-primary-color-hover: #187bd1;
+  --button-primary-border: none;
 }

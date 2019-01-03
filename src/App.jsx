@@ -6,8 +6,9 @@ import AdoptiveParent from './components/AdoptiveParent';
 import Documents from './components/Documents';
 import Information from './components/Information';
 import Test from './components/Test';
-import AboutParents from './components/AboutParents';
-
+import Fosternoe from './components/Fosternoe';
+import Opekunstvo from './components/Opekunstvo';
+import Usynovlenie from './components/Usynovlenie';
 
 
 class App extends Component {
@@ -20,7 +21,9 @@ class App extends Component {
           <Route exact path="/docs" component={Documents} />
           <Route exact path="/info" component={Information} />
           <Route exact path="/test" component={Test} />
-          <Route exact path="/AboutParents" component={AboutParents} />
+          <Route exact path="/fost" component={Fosternoe} />
+          <Route exact path="/opekunstvo" component={Opekunstvo} />
+          <Route exact path="/usynovlenie" component={Usynovlenie} />
 
         </div>
       </Router>

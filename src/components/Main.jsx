@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import '../css/Main.css';
 import { Jumbotron, Grid, Row, Col, Image } from 'react-bootstrap';
 import Carousel from 'nuka-carousel';
+import {Form, FormControl, FormGroup, ControlLabel,Button} from 'react-bootstrap';
+
 
 export default class Home extends Component {
     render() {
@@ -19,8 +21,9 @@ export default class Home extends Component {
                   </Carousel>
             </div>
           </div>
-      <div className="menu">
+
       <Grid>
+        <div className="menu">
         <Jumbotron>
           <h2>Заголовок</h2>
           <h3>Краткое описание</h3>
@@ -51,9 +54,31 @@ export default class Home extends Component {
               </Link>
             </Col>
           </Row>
+              <h2>Связь с нами</h2>
+              <h3>Краткое описание</h3>
+              <Form inline>
+              <FormGroup controlId="formInlineName">
+                <ControlLabel>Ваше имя</ControlLabel>{' '}
+                <FormControl type="text" placeholder="Имя" />
+              </FormGroup>{' '}
+              <FormGroup controlId="formInlineEmail">
+                <ControlLabel>Ваш e-mail</ControlLabel>{' '}
+                <FormControl type="email" placeholder="example@com" />
+              </FormGroup>{' '}
+
+            <FormGroup controlId="formHorizontal">
+                <Col componentClass={ControlLabel} sm={10}>
+                Ваше сообщение
+                <FormControl type="text" />
+                </Col>
+                <Button type="submit" bsStyle="primary">Отправить сообщение</Button>
+            </FormGroup>
+            </Form>
+
         </Jumbotron>
+          </div>
       </Grid>
-      </div>
+
       </div>
     )
   }
