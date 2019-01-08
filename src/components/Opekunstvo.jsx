@@ -25,7 +25,7 @@ export default class Home extends React.Component {
   <div className="menu">
     <Jumbotron>
     <Row className="show-grid text-center">
-        <h2>Фостерное опекунство</h2>
+        <h2>Опекунство</h2>
     </Row>
         <ul>
           { this.state.content.map(content => <div>{content.content}</div>)}

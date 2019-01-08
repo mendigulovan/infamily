@@ -4,38 +4,46 @@ import '../css/Information.css';
 import { Jumbotron, Grid, Row} from 'react-bootstrap';
 
 export default class Home extends React.Component {
-  state = {
-    content: []
-  }
+  constructor(){
+        super();
+        this.state={
+            userMsg:null
+        }
+    }
+    componentDidMount(){
+        axios.get("https://cors-anywhere.herokuapp.com/http://46.101.236.211:5678/api/articles/13/",{}).then((res)=>{
+                //on success
+                this.setState({
+            userMsg:res.data
+        });
 
-  componentDidMount() {
-    axios.get(`https://cors-anywhere.herokuapp.com/http://46.101.236.211:5678/api/categories/5/`)
-      .then(res => {
-        const content = res.data;
-        this.setState({ content });
-      })
-  }
+        }).catch((error)=>{
+            //on error
+            alert("There is an error in API call.");
+        });
+    }
 
-  render() {
-    return (
-      <div>
-      <header class="head">
-      </header>
-  <Grid>
-  <div className="menu">
-    <Jumbotron>
-    <Row className="show-grid text-center">
-        <h2>Фостерное опекунство</h2>
-    </Row>
-        <ul>
-          { this.state.content.map(content => <div>{content.content}</div>)}
-        </ul>
+render(){
 
+    return(
+          this.state.userMsg!=null &&
+        <div className="content">
+          <header class="head">
+          </header>
+            <Grid>
+            <div className="menu">
+              <Jumbotron className="text">
+              <Row className="show-grid text-center">
+                  <h2>Фостерное опекунство</h2>
+              </Row>
+                <div>
+                <div className="text">{this.state.userMsg.content}</div>
+            </div>
+                </Jumbotron>
+                </div>
+              </Grid>
+            </div>
 
-    </Jumbotron>
-    </div>
-  </Grid>
-</div>
-    )
-  }
+        );
+    }
 }

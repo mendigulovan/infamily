@@ -1,30 +1,32 @@
 import React, { Component } from 'react';
 import '../css/AdoptiveParent.css';
-import { Jumbotron, Grid, Row, Col, Image, Button, ButtonToolbar } from 'react-bootstrap';
+import { Jumbotron, Grid, Row, Col, Image, Button,ButtonGroup, ButtonToolbar } from 'react-bootstrap';
 import Documents from '../components/Documents';
 import Information from '../components/Information';
 import Test from '../components/Test';
-import {AwesomeButton} from 'react-awesome-button';
-import styles from 'react-awesome-button/src/styles/themes/theme-blue';
-
-
 
 export default class Home extends Component {
   constructor( props ){
       super( props )
-      this.state = { show : true };
-      this.toggleDiv = this.toggleDiv.bind(this)
+      this.state = {render:''}
 
   }
+  handleClick(compName, e){
+         console.log(compName);
+         this.setState({render:compName});
+     }
+     _renderSubComp(){
+         switch(this.state.render){
+             case 'info': return <Information/>
+             case 'docs' : return <Documents/>
+             case 'test': return <Test/>
+         }
+     }
 
-  toggleDiv = () => {
-        const { show } = this.state;
-        this.setState( { show : !show } )
-    }
 
     render() {
         return (
-          <div>
+          <div className="content">
           <header class="head">
           </header>
       <Grid>
@@ -37,12 +39,16 @@ export default class Home extends Component {
           </Row>
             <h2>Хотите стать приёмным родителем?</h2>
             <h3>Этот раздел содержит...</h3>
-            <button onClick={ this.toggleDiv }>Информация об опекунстве</button>
-            <button>Процесс сбора документов</button>
-            <button>ТЕСТ Готовы ли вы?</button>
-            <br></br>
-            { this.state.show && <Information/> }
-
+            <div class="col-xs-4" className="cat-wrapper">
+                <ButtonToolbar>
+                  <ButtonGroup bsSize="large">
+                    <Button bsStyle="link" onClick={this.handleClick.bind(this, 'info')}>Информация об опекунстве</Button >
+                    <Button bsStyle="link" onClick={this.handleClick.bind(this, 'docs')}>Процесс сбора документов</Button >
+                    <Button bsStyle="link" onClick={this.handleClick.bind(this, 'test')}>Тест: Готовы ли Вы?</Button >
+                  </ButtonGroup>
+                </ButtonToolbar>
+                {this._renderSubComp()}
+            </div>
         </Jumbotron>
         </div>
       </Grid>

@@ -40,19 +40,23 @@ h2 {
   background-repeat: no-repeat;
 }
 
-.bt {
-  background-color: #d9d9d9;
+.btn-link{
+
+  height: 104px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 14px;
+  text-align: center;
+
+  color: #555555;
 }
 
-.btn-link: focus{
-    background-color: yellow !important;
-    text-decoration: underline;
-}
-
-.aws-btn {
-  --button-primary-color: #1e88e5;
-  --button-primary-color-dark: #1360a4;
-  --button-primary-color-light: #ffffff;
-  --button-primary-color-hover: #187bd1;
-  --button-primary-border: none;
+.btn-link:focus{
+  background-color: #C4C4C4;
+  color: #FFFFFF;
+  outline: none;
+  text-decoration: none;
 }
