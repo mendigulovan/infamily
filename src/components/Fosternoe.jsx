@@ -7,14 +7,15 @@ export default class Home extends React.Component {
   constructor(){
         super();
         this.state={
-            userMsg:null
+            userMsg:[]
         }
     }
     componentDidMount(){
         axios.get("https://cors-anywhere.herokuapp.com/http://46.101.236.211:5678/api/articles/13/",{}).then((res)=>{
                 //on success
+                const get = res.data;
                 this.setState({
-            userMsg:res.data
+            userMsg: get
         });
 
         }).catch((error)=>{
@@ -24,7 +25,9 @@ export default class Home extends React.Component {
     }
 
 render(){
-
+const api = this.state.userMsg.content;
+console.log(api);
+const p = 20;
     return(
           this.state.userMsg!=null &&
         <div className="content">
@@ -37,7 +40,7 @@ render(){
                   <h2>Фостерное опекунство</h2>
               </Row>
                 <div>
-                <div className="text">{this.state.userMsg.content}</div>
+                <div className="text"><div>{api.split(2, 10)}</div></div>
             </div>
                 </Jumbotron>
                 </div>

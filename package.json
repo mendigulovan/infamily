@@ -11,13 +11,16 @@
     "react-awesome-button": "^5.0.0",
     "react-bootstrap": "^0.32.4",
     "react-bootstrap-carousel": "^3.4.1",
+    "react-clamp-lines": "^2.0.2",
     "react-dom": "^16.7.0",
+    "react-lines-ellipsis": "^0.14.0",
     "react-native-awesome-button": "^1.8.2",
     "react-photo-gallery": "^6.3.0",
     "react-responsive-carousel": "^3.1.45",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
     "react-thumbnail": "^1.0.0",
+    "react-truncate": "^2.4.0",
     "reactstrap": "^6.5.0"
   },
   "scripts": {
