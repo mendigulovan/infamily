@@ -9,6 +9,8 @@ import Test from './components/Test';
 import Fosternoe from './components/Fosternoe';
 import Opekunstvo from './components/Opekunstvo';
 import Usynovlenie from './components/Usynovlenie';
+import AboutParents from './components/AboutParents';
+import Children from './components/Children';
 
 
 class App extends Component {
@@ -24,6 +26,8 @@ class App extends Component {
           <Route exact path="/fost" component={Fosternoe} />
           <Route exact path="/opekunstvo" component={Opekunstvo} />
           <Route exact path="/usynovlenie" component={Usynovlenie} />
+          <Route exact path="/aboutParents" component={AboutParents} />
+          <Route exact path="/child" component={Children} />
 
         </div>
       </Router>

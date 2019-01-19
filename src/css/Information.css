@@ -1,29 +1,36 @@
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+.wrap {
+  margin-left: 200px;
+
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  max-width: 50%;
-  padding: 0 4px;
-}
-text {
-  position: absolute;
-  width: 1068px;
-  height: 323px;
+.wrap-2 {
+  margin-left: 250px;
 
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-size: 25px;
-
-  color: #000000;
 }
 
-.text {
-  height: 290vh;
+.pic {
+  width: 300px;
+  height: 197px;
+  margin-top: 30px;
+
+}
+
+.pic2 {
+  width: 320px;
+  height: 370px;
+  margin-top: 30px;
+
+}
+
+.pic3 {
+  width: 300px;
+  height: 370px;
+  margin-top: -200px;
+
+}
+
+.pic4 {
+  width: 300px;
+  height: 280px;
+  margin-top: 10px;
 }

@@ -40,7 +40,7 @@ const p = 20;
                   <h2>Фостерное опекунство</h2>
               </Row>
                 <div>
-                <div className="text"><div>{api.split(2, 10)}</div></div>
+                <div className="text"><div>{api}</div></div>
             </div>
                 </Jumbotron>
                 </div>

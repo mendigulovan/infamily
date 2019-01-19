@@ -1,6 +1,7 @@
 
-.cat-wrapper {
+.wrapper {
   margin-bottom: 2em;
+  margin-left: 25em;
 }
 
 .picture {
@@ -28,7 +29,7 @@ h2 {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  font-size: 30px;
+
 }
 
 .head {
@@ -40,23 +41,6 @@ h2 {
   background-repeat: no-repeat;
 }
 
-.btn-link{
-
-  height: 104px;
-
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-size: 14px;
-  text-align: center;
-
-  color: #555555;
-}
-
-.btn-link:focus{
-  background-color: #C4C4C4;
-  color: #FFFFFF;
-  outline: none;
-  text-decoration: none;
+.btn-wrapper {
+  margin-left: 10px;
 }

@@ -39,15 +39,12 @@ export default class Home extends Component {
           </Row>
             <h2>Хотите стать приёмным родителем?</h2>
             <h3>Этот раздел содержит...</h3>
-            <div class="col-xs-4" className="cat-wrapper">
-                <ButtonToolbar>
-                  <ButtonGroup bsSize="large">
-                    <Button bsStyle="link" onClick={this.handleClick.bind(this, 'info')}>Информация об опекунстве</Button >
-                    <Button bsStyle="link" onClick={this.handleClick.bind(this, 'docs')}>Процесс сбора документов</Button >
-                    <Button bsStyle="link" onClick={this.handleClick.bind(this, 'test')}>Тест: Готовы ли Вы?</Button >
-                  </ButtonGroup>
-                </ButtonToolbar>
-                {this._renderSubComp()}
+            <div className="btn-wrapper">
+              <button type="button" class="btn btn-flat btn-lg" onClick={this.handleClick.bind(this, 'info')}>Информация<br></br> об опекунстве</button >
+              <button type="button" class="btn btn-flat btn-lg" onClick={this.handleClick.bind(this, 'docs')}>Процесс сбора<br></br> документов</button >
+              <button type="button" class="btn btn-flat btn-lg" onClick={this.handleClick.bind(this, 'test')}>ТЕСТ<br></br> Готовы ли Вы?</button >
+
+              {this._renderSubComp()}
             </div>
         </Jumbotron>
         </div>
