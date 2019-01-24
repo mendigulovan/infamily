@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../css/AdoptiveParent.css';
 import { Jumbotron, Grid, Row, Col, Image, Button,ButtonGroup, ButtonToolbar } from 'react-bootstrap';
+import Typography from '@material-ui/core/Typography';
 import Documents from '../components/Documents';
 import Information from '../components/Information';
 import Test from '../components/Test';

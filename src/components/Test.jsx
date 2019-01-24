@@ -12,10 +12,13 @@ export default class Home extends React.Component {
     return (
       <Grid>
           <Row className="show-grid text-center">
-            <Col xs={12} sm={3} className="cat-wrapper">
-              <h4>Тест</h4>
+            <Col>
             </Col>
           </Row>
+          <Row>
+          <Col sm={{ size: 'auto', offset: 1 }}></Col>
+          <Col sm={{ size: 'auto', offset: 1 }}></Col>
+        </Row>
       </Grid>
     )
   }

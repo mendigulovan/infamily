@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../css/Documents.css';
+import Signup from '../components/Signup';
+import { Link } from 'react-router-dom';
 import {
   MDBContainer,
   MDBRow,
@@ -14,13 +16,16 @@ import {
 } from "mdbreact";
 
 
+
 export default class Docs extends React.Component {
 
   constructor(props){
         super(props);
 
 
+
     }
+
 
   render() {
     return (
@@ -39,7 +44,6 @@ export default class Docs extends React.Component {
                 <div className="grey-text">
                   <MDBInput
                     label="Type your email"
-                    icon="envelope"
                     group
                     type="email"
                     validate
@@ -48,7 +52,12 @@ export default class Docs extends React.Component {
                   />
                   <MDBInput
                     label="Type your password"
-                    icon="lock"
+                    group
+                    type="password"
+                    validate
+                  />
+                  <MDBInput
+                    label="Type your phone number"
                     group
                     type="password"
                     validate
@@ -67,8 +76,11 @@ export default class Docs extends React.Component {
               </form>
               <MDBModalFooter>
                 <div className="font-weight-light">
-                  <p>Not a member? Sign Up</p>
+                <Link to="/signup">
+                <p>Зарегистрироваться</p>
+                </Link>
                   <p>Forgot Password?</p>
+
                 </div>
               </MDBModalFooter>
             </MDBCardBody>

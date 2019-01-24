@@ -11,6 +11,7 @@ import Opekunstvo from './components/Opekunstvo';
 import Usynovlenie from './components/Usynovlenie';
 import AboutParents from './components/AboutParents';
 import Children from './components/Children';
+import Signup from './components/Signup';
 
 
 class App extends Component {
@@ -28,6 +29,7 @@ class App extends Component {
           <Route exact path="/usynovlenie" component={Usynovlenie} />
           <Route exact path="/aboutParents" component={AboutParents} />
           <Route exact path="/child" component={Children} />
+          <Route exact path="/signup" component={Signup} />
 
         </div>
       </Router>
