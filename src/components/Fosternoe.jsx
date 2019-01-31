@@ -34,7 +34,7 @@ const p = 20;
           <header class="head">
           </header>
             <Grid>
-            <div className="menu">
+            <div className="main_content">
               <Jumbotron className="text">
               <Row className="show-grid text-center">
                   <h2>Фостерное опекунство</h2>

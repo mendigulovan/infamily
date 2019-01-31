@@ -1,5 +1,10 @@
-.form-registration {
-  margin-left: 400px;
+.sign_in {
+  margin-left: 350px;
   margin-top: 50px;
+  width: 800px;
 
+}
+
+.sign_up {
+  margin-left: 400px;
 }

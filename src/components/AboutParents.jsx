@@ -1,18 +1,10 @@
 import React, { Component } from 'react';
 import '../css/Information.css';
-import { Jumbotron, Grid, Row, Col, Image, Button,ButtonGroup, ButtonToolbar } from 'react-bootstrap';
+import { Jumbotron, Grid, Row, Col, Image} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import Documents from '../components/Documents';
-import Information from '../components/Information';
-import Test from '../components/Test';
+
 
 export default class AboutParents extends Component {
-  constructor( props ){
-      super( props )
-
-
-  }
-
 
     render() {
         return (
@@ -20,7 +12,7 @@ export default class AboutParents extends Component {
           <header class="head">
           </header>
       <Grid>
-      <div className="menu">
+      <div className="main_content">
         <Jumbotron>
         <Row className="show-grid text-center">
         <Col xs={12} sm={4} className="cat-wrapper">

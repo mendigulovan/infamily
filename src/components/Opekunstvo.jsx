@@ -22,7 +22,7 @@ export default class Home extends React.Component {
       <header class="head">
       </header>
   <Grid>
-  <div className="menu">
+  <div className="main_content">
     <Jumbotron>
     <Row className="show-grid text-center">
         <h2>Опекунство</h2>

@@ -22,8 +22,9 @@ export default class Home extends Component {
           </div>
 
       <Grid>
-        <div className="menu">
+        <div className="main_content">
         <Jumbotron>
+        <div className="menu">
         <div className="text">
           <h2>Заголовок</h2>
           <h3>Краткое описание</h3>
@@ -105,8 +106,9 @@ export default class Home extends Component {
             </MDBRow>
             </MDBContainer>
             </div>
+            </div>
           </Jumbotron>
-        </div>
+          </div>
       </Grid>
     </div>
     )

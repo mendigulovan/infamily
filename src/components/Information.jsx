@@ -18,31 +18,28 @@ export default class Info extends React.Component {
           <Row around="xs">
             <Col xs={5}>
               <Link to="/fost">
-              <div class="img-wrap">
+              <div class="pic1">
               <h3>Фостерное опекунство</h3>
-              <Image src="assets/fost.jpg" className="pic"/>
               </div>
               </Link>
             </Col>
             <Col xs={3}>
               <Link to="/usynovlenie">
-              <div class="img-wrap">
+              <div class="pic2">
               <h3>Усыновление</h3>
-              <Image src="assets/usynovlenie.jpg" className="pic2"/>
               </div>
               </Link>
             </Col>
             <Col xs={5}>
               <Link to="/opekunstvo">
-              <div class="img-wrap">
+              <div class="pic3">
               <h3>Опекунство и попечительство</h3>
-              <Image src="assets/opekunstvo.jpg"  className="pic3"/>
               </div>
               </Link>
             </Col>
             <Col xs={3}>
               <Link to="/">
-              <Image src="assets/4pic.jpg"  className="pic"/>
+              <div class="pic4"></div>
               </Link>
             </Col>
           </Row>

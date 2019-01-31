@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../css/Documents.css';
 import Signup from '../components/Signup';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import {
   MDBContainer,
   MDBRow,
@@ -19,17 +20,32 @@ import {
 
 export default class Docs extends React.Component {
 
-  constructor(props){
-        super(props);
+  state = {
+    name: '',
+    password: '',
+    phone: '',
 
+  };
 
+  handleFullNameChange = event => {this.setState({ name: event.target.value })}
+  handlePasswordChange = event => {this.setState({ password: event.target.value })}
+  handleMobileChange = event => {this.setState({ phone: event.target.value })}
 
-    }
+  handleSubmit = event => {
+    event.preventDefault();
+
+    axios.post('https://cors-anywhere.herokuapp.com/http://46.101.236.211:5678/api/documents/',
+      { name: this.state.name, password: this.state.password, phone: this.state.phone },)
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+  }
 
 
   render() {
     return (
-      <div className="form-registration">
+      <div className="sign_in">
       <MDBContainer>
       <MDBRow>
         <MDBCol md="7">
@@ -40,7 +56,7 @@ export default class Docs extends React.Component {
                   Войти или зарегистрироваться
                 </h3>
               </MDBCardHeader>
-              <form>
+              <form onSubmit={this.handleSubmit}>
                 <div className="grey-text">
                   <MDBInput
                     label="Type your email"
@@ -49,18 +65,24 @@ export default class Docs extends React.Component {
                     validate
                     error="wrong"
                     success="right"
+                    value={this.state.name}
+                    onChange={this.handleFullNameChange}
                   />
                   <MDBInput
                     label="Type your password"
                     group
                     type="password"
                     validate
+                    value={this.state.password}
+                    onChange={this.handlePasswordChange}
                   />
                   <MDBInput
                     label="Type your phone number"
                     group
-                    type="password"
+                    type="text"
                     validate
+                    value={this.state.phone}
+                    onChange={this.handleMobileChange}
                   />
                 </div>
 
@@ -69,6 +91,7 @@ export default class Docs extends React.Component {
                   color="light-blue"
                   className="mb-3"
                   type="submit"
+                  class="btn btn-primary btn-lg wave" 
                 >
                   Login
                 </MDBBtn>

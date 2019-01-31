@@ -1,6 +1,5 @@
 .wrap {
   margin-left: 200px;
-
 }
 
 .wrap-2 {
@@ -8,52 +7,65 @@
 
 }
 
-.pic {
-  width: 300px;
+.pic4 {
+  background: linear-gradient(rgba(0,0,0,0.5),
+	rgba(0,0,0,0.5)),
+	url('../img/4pic.jpg');
+  background-size: cover;
+  width: 330px;
   height: 197px;
   margin-top: 30px;
 
 }
 
-.pic2 {
-  width: 320px;
+.pic2 h3 {
+  font-family: Roboto;
+	color: #fff;
+  margin-top: 0;
+	background: linear-gradient(rgba(0,0,0,0.5),
+	rgba(0,0,0,0.5)),
+	url('../img/usynovlenie.jpg');
+  background-size: contain;
+	font-size: 2rem;
+  padding: 10rem;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  width: 330px;
   height: 370px;
   margin-top: 30px;
-
-
 }
 
-.pic3 {
-  width: 300px;
+.pic3 h3 {
+  font-family: Roboto;
+  color: #fff;
+  margin-top: 0;
+  background: linear-gradient(rgba(0,0,0,0.5),
+   rgba(0,0,0,0.5)),
+   url('../img/opekunstvo.jpg');
+  font-size: 2rem;
+  padding: 9rem;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 320px;
   height: 370px;
   margin-top: -150px;
-
-
 }
 
-.pic4 {
-  width: 300px;
-  height: 280px;
-  margin-top: 10px;
-
-}
-
-.img-wrap {
-  position: relative;
-
-}
-
-.img-wrap h3 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  color: #FFFFFF;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-size: 20px;
-  text-align: center;
-  -webkit-text-stroke: 0.5px black;
+.pic1 h3 {
+	font-family: Roboto;
+	color: #fff;
+  margin-top: 0;
+	background: linear-gradient(rgba(0,0,0,0.5),
+	 rgba(0,0,0,0.5)),
+	  url('../img/fost.jpg');
+	font-size: 2rem;
+  padding: 7rem;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  width: 320px;
+  height: 197px;
+  margin-top: 30px;
 }

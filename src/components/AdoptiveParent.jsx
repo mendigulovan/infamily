@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import '../css/AdoptiveParent.css';
-import { Jumbotron, Grid, Row, Col, Image, Button,ButtonGroup, ButtonToolbar } from 'react-bootstrap';
-import Typography from '@material-ui/core/Typography';
+import { Jumbotron, Grid, Row, Col, Image } from 'react-bootstrap';
 import Documents from '../components/Documents';
 import Information from '../components/Information';
 import Test from '../components/Test';
 
-export default class Home extends Component {
+export default class AdoptiveParent extends Component {
   constructor( props ){
       super( props )
       this.state = {render:''}
@@ -31,7 +30,7 @@ export default class Home extends Component {
           <header class="head">
           </header>
       <Grid>
-      <div className="menu">
+      <div className="main_content">
         <Jumbotron>
         <Row className="show-grid text-center">
         <Col xs={12} sm={4} className="cat-wrapper">
